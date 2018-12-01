@@ -1,8 +1,8 @@
 var mongoose =require('mongoose');
-var {mongodb}=require('./keys');
+var {mongodb}=require('../configs/keys');
 
-mongoose.connect(mongo.URI, {
+mongoose.connect(mongodb.URI, {
     useNewUrlParser:true,
     useCreateIndex:true
-}).then(debu=>console.log("conexion!!"))
+}).then(db=>console.log("conexion!!"))
 .catch(err=> console.error(err));
