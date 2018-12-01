@@ -8,6 +8,10 @@ lenteSchema={
     campoDeAmplitud: Number,
     distanciaFocal:Number
 }
+app.post('/', (req,res,next)=>
+{
+
+});
 
 module.exports=mongoose.model('lentes',lenteSchema)
 
